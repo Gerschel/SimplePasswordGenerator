@@ -5,8 +5,12 @@ from hashlib import sha256
 from sys import argv
 
 def generate():
-    code = str(int.from_bytes(urandom(32), 'little'))
-    code = sha256(code.encode()).hexdigest()
+    """Generates a value from system random,
+    supposedly cryptographically safe,
+    but then hashes it in case system has low entropy,
+    probably overkill"""
+    code = sha256(urandom(32)).hexdigest()
+    #Convert the bytes into the range for the characters
     code = [chr((int(code[x:x+2], 16)%94)+33) for x in range(0,64,2)]
     return "".join(code)
 
