@@ -9,13 +9,14 @@ When including symbols, it's best to put your characters in single quotes, other
 
 For example:  
 python3 main.py i 'abcdefghijklmnopqrstuvwxyz#!@'  
+  
 python3 main.py f '#$ABDdeg'  
 
 You can optionally not put in any parameters and it will ask you to type which letters you'd like filtered out.  
 python3 main.py  
 
 The alphabet is limited to these characters only.:  
-!"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+!"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^\_\`abcdefghijklmnopqrstuvwxyz{|}~
 
 To use the single quote in the shell, as a filter or included letter, you must use it outside of the single quotes and escape it.:  
 escaped quote = \\\'  
