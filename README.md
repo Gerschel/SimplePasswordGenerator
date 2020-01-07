@@ -18,6 +18,6 @@ The alphabet is limited to these characters only.:
 !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~
 
 To use the single quote in the shell, as a filter or included letter, you must use it outside of the single quotes and escape it.:  
-escaped quote = \'  
+escaped quote = \\\'  
 In use:  
 python3 main.py i 'asdf'\'  
